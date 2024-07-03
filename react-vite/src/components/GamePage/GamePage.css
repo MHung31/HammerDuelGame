@@ -22,13 +22,37 @@
 .key-tile {
   width: 100px;
   height: 100px;
-  background-color: rgb(205, 247, 205);
+
   color: black;
   border: 1px solid black;
   text-align: center;
   padding: 40px 0px;
   box-sizing: border-box;
   margin: 5px;
+}
+
+#one-false,
+#three-false,
+#four-false,
+#five-false,
+#six-false,
+#seven-false,
+#eight-false,
+#two-false,
+#nine-false {
+  background-color: rgb(205, 247, 205);
+}
+
+#one-true,
+#three-true,
+#four-true,
+#five-true,
+#six-true,
+#seven-true,
+#eight-true,
+#two-true,
+#nine-true {
+  background-color: red;
 }
 
 #left-panel,
