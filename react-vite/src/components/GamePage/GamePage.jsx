@@ -13,9 +13,9 @@ function GamePage() {
 
       <div id="game-board">
         Game Board
-        {/* <div>{tiles.map(key=>{
-          return<div id={key}>{key}</>
-        })}</div> */}
+        <div id="game-keys">{tiles.map(key=>{
+          return<div className="key-tile" id={key}>{key}</div>
+        })}</div>
       </div>
       <div id="right-panel">
         Right Panel<div id="level">Level</div>
