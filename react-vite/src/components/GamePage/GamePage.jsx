@@ -31,52 +31,52 @@ function GamePage() {
         clearTimeout(oneTimeout);
         oneTimeout = setTimeout(() => setOne(false), 1000);
       }
-      if (key === "2") {
+      if (key === "2" && !two) {
         setTwo(true);
         clearTimeout(twoTimeout);
-        twoTimeout = setTimeout(() => setOne(false), 1000);
+        twoTimeout = setTimeout(() => setTwo(false), 1000);
       }
-      if (key === "3") {
+      if (key === "3" && !three) {
         setThree(true);
         clearTimeout(threeTimeout);
-        threeTimeout = setTimeout(() => setOne(false), 1000);
+        threeTimeout = setTimeout(() => setThree(false), 1000);
       }
-      if (key === "4") {
+      if (key === "4" && !four) {
         setFour(true);
         clearTimeout(fourTimeout);
-        fourTimeout = setTimeout(() => setOne(false), 1000);
+        fourTimeout = setTimeout(() => setFour(false), 1000);
       }
-      if (key === "5") {
+      if (key === "5" && !five) {
         setFive(true);
         clearTimeout(fiveTimeout);
-        fiveTimeout = setTimeout(() => setOne(false), 1000);
+        fiveTimeout = setTimeout(() => setFive(false), 1000);
       }
-      if (key === "6") {
+      if (key === "6" && !six) {
         setSix(true);
         clearTimeout(sixTimeout);
-        sixTimeout = setTimeout(() => setOne(false), 1000);
+        sixTimeout = setTimeout(() => setSix(false), 1000);
       }
-      if (key === "7") {
+      if (key === "7" && !seven) {
         setSeven(true);
         clearTimeout(sevenTimeout);
-        sevenTimeout = setTimeout(() => setOne(false), 1000);
+        sevenTimeout = setTimeout(() => setSeven(false), 1000);
         () => setSeven(false), 1000;
       }
-      if (key === "8") {
+      if (key === "8" && !eight) {
         setEight(true);
         clearTimeout(eightTimeout);
-        eightTimeout = setTimeout(() => setOne(false), 1000);
+        eightTimeout = setTimeout(() => setEight(false), 1000);
       }
-      if (key === "9") {
+      if (key === "9" && !nine) {
         setNine(true);
         clearTimeout(nineTimeout);
-        nineTimeout = setTimeout(() => setOne(false), 1000);
+        nineTimeout = setTimeout(() => setNine(false), 1000);
       }
     };
-    document.addEventListener("keyup", handleKey, true);
+    document.addEventListener("keydown", handleKey, true);
 
     return () => {
-      document.removeEventListener("keyup", handleKey);
+      document.removeEventListener("keydown", handleKey);
     };
   }, []);
 
