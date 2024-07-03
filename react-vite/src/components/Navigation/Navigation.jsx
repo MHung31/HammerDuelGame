@@ -6,9 +6,11 @@ function Navigation() {
   return (
     <ul>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">Welcome Screen</NavLink>
       </li>
-
+      <li>
+        <NavLink to="homepage">HomePage</NavLink>
+      </li>
       <li>
         <ProfileButton />
       </li>
