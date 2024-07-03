@@ -1,0 +1,9 @@
+.start-game {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
